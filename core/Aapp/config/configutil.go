@@ -22,7 +22,7 @@ func InitConfig(configPath string) Configuration {
 		viper.AddConfigPath(configPath)
 	} else {
 		home, _ := homedir.Dir()
-		configPath = home + "/.zavis/configurations"
+		configPath = home + "/.your_project/configurations"
 		viper.AddConfigPath(configPath)
 	}
 
